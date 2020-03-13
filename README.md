@@ -4,11 +4,17 @@ https://bulma.io/
 
 https://github.com/laravel-frontend-presets/bulma
 
-Missing pagination files.
+## Requirements
+- PHP >= 7.2
+- Laravel >= 6.0
 
-1: Copy to resources/views/
+## Installation
 
-2: AppServiceProvider@boot
+```
+composer require revolution/laravel-pagination-bulma
+```
+
+### AppServiceProvider@boot
 
 ```php
 namespace App\Providers;
@@ -25,7 +31,18 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Paginator::defaultView('vendor.pagination.bulma');
-        Paginator::defaultSimpleView('vendor.pagination.simple-bulma');
+        Paginator::defaultView('pagination-bulma::bulma');
+        Paginator::defaultSimpleView('pagination-bulma::simple-bulma');
     }
+}
 ```
+
+## Publishing Views(Optional)
+```
+php artisan vendor:publish --provider="Revolution\Pagination\Bulma\BulmaServiceProvider"
+```
+
+`resources/views/vendor/pagination-bulma`
+
+## LICENSE
+MIT  
