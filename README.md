@@ -39,7 +39,7 @@ class AppServiceProvider extends ServiceProvider
 
 ## Publishing Views(Optional)
 ```
-php artisan vendor:publish --provider="Revolution\Pagination\Bulma\BulmaServiceProvider"
+php artisan vendor:publish --tag=pagination-bulma
 ```
 
 `resources/views/vendor/pagination-bulma`

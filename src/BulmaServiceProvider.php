@@ -16,7 +16,8 @@ class BulmaServiceProvider extends ServiceProvider
         $this->publishes(
             [
                 __DIR__.'/../pagination' => resource_path('views/vendor/pagination-bulma'),
-            ]
+            ],
+            'pagination-bulma'
         );
     }
 }
