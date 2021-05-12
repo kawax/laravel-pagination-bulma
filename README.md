@@ -5,7 +5,7 @@ https://bulma.io/
 https://github.com/laravel-frontend-presets/bulma
 
 ## Requirements
-- PHP >= 7.3
+- PHP >= 7.2
 - Laravel >= 6.0
 
 ## Installation
@@ -31,7 +31,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Paginator::useBulma();
+        Paginator::defaultView('pagination-bulma::bulma');
+        Paginator::defaultSimpleView('pagination-bulma::bulma-simple');
     }
 }
 ```

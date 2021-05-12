@@ -2,7 +2,6 @@
 
 namespace Revolution\Pagination\Bulma;
 
-use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 
 class BulmaServiceProvider extends ServiceProvider
@@ -20,10 +19,5 @@ class BulmaServiceProvider extends ServiceProvider
             ],
             'pagination-bulma'
         );
-
-        Paginator::macro('useBulma', function () {
-            Paginator::defaultView('pagination-bulma::bulma');
-            Paginator::defaultSimpleView('pagination-bulma::bulma-simple');
-        });
     }
 }
