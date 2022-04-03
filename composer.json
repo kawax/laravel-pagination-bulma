@@ -1,5 +1,5 @@
 {
-  "name": "revolution/laravel-pagination-bulma",
+  "name": "xtrcode/laravel-pagination-bulma",
   "description": "Laravel pagination template for Bulma",
   "keywords": [
     "pagination",
@@ -18,8 +18,8 @@
   },
   "authors": [
     {
-      "name": "kawax",
-      "email": "kawaxbiz@gmail.com"
+      "name": "xtrcode",
+      "email": "spam@xtracode.ws"
     }
   ],
   "extra": {
