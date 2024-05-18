@@ -9,7 +9,7 @@ class BulmaServiceProvider extends ServiceProvider
     /**
      * Boot the service provider.
      */
-    public function boot()
+    public function boot(): void
     {
         $this->loadViewsFrom(__DIR__.'/../pagination', 'pagination-bulma');
 
