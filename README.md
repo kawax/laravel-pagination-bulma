@@ -2,8 +2,6 @@
 
 https://bulma.io/
 
-https://github.com/laravel-frontend-presets/bulma
-
 ## Requirements
 - PHP >= 8.0
 - Laravel >= 10.0
