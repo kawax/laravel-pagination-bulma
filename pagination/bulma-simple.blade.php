@@ -3,16 +3,16 @@
 
         {{-- Previous Page Link --}}
         @if ($paginator->onFirstPage())
-            <a class="pagination-previous" disabled>Previous</a>
+            <a class="pagination-previous is-disabled">{!! __('pagination.previous') !!}</a>
         @else
-            <a href="{{ $paginator->previousPageUrl() }}" class="pagination-previous">Previous</a>
+            <a href="{{ $paginator->previousPageUrl() }}" class="pagination-previous">{!! __('pagination.previous') !!}</a>
         @endif
 
         {{-- Next Page Link --}}
         @if ($paginator->hasMorePages())
-            <a href="{{ $paginator->nextPageUrl() }}" class="pagination-next">Next page</a>
+            <a href="{{ $paginator->nextPageUrl() }}" class="pagination-next">{!! __('pagination.next') !!}</a>
         @else
-            <a class="pagination-next" disabled>Next page</a>
+            <a class="pagination-next is-disabled">{!! __('pagination.next') !!}</a>
         @endif
 
     </nav>
