@@ -15,13 +15,13 @@
                     @foreach ($element as $page => $url)
                         @if ($page == $paginator->currentPage())
                             <li>
-                                <a class="pagination-link is-current" aria-label="Page {{ $page }}"
+                                <a class="pagination-link is-current" aria-label="{{ __('Page :page', ['page' => $page]) }}"
                                    aria-current="page">{{ $page }}</a>
                             </li>
                         @else
                             <li>
                                 <a href="{{ $url }}" class="pagination-link"
-                                   aria-label="Goto page {{ $page }}">{{ $page }}</a>
+                                   aria-label="{{ __('Goto page :page', ['page' => $page]) }}">{{ $page }}</a>
                             </li>
                         @endif
                     @endforeach
